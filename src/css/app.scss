@@ -1,0 +1,83 @@
+// app global css in SCSS form
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+
+  .bg-header {
+    background-color: #202020;
+    color: white;
+  }
+
+  .bg-footer {
+    background-color: #202020;
+    color: white;
+  }
+
+  .bg-content {
+    background-color: #303030;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .bg-header {
+    background-color: #f1f3f7;
+    color: black;
+  }
+
+  .bg-footer {
+    background-color: #f1f3f7;
+    color: black;
+  }
+
+  .bg-content {
+    background-color: #fff;
+    color: black;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  //background: #232323;
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  //background: #555;
+  background: #aaa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
