@@ -1,13 +1,20 @@
 import electronStore from 'electron-store';
 
-const store = new electronStore();
+const store = new electronStore({
+	defaults: {
+		THEME: 'light',
+		IS_MAXIMIZED: false,
+		'WINDOW_BOUNDS.WIDTH': 1300,
+		'WINDOW_BOUNDS.HEIGHT': 700,
+	},
+});
 
 /**
  * Get setting value
  * @param {string} settingName
  */
 export function get(settingName: string): any {
-  return store.get(settingName);
+	return store.get(settingName);
 }
 
 /**
@@ -16,14 +23,5 @@ export function get(settingName: string): any {
  * @param {*} value
  */
 export function set(settingName: string, value: any): void {
-  store.set(settingName, value);
-}
-
-/**
- * Set initial value for setting if it not setted
- * @param {string} settingName
- * @param {*} initialValue
- */
-export function setInitialValue(settingName: string, initialValue: any): void {
-  if (!store.has(settingName)) set(settingName, initialValue);
+	store.set(settingName, value);
 }

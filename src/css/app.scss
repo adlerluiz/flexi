@@ -19,6 +19,31 @@
     background-color: #303030;
     color: white;
   }
+
+  .q-tab-panel {
+    background-color: #303030;
+    color: #fff;
+  }
+
+  .q-field__native {
+    color: #fff;
+  }
+
+  .q-item__label {
+    color: #000;
+  }
+
+  .q-separator {
+    background-color: #212121;
+  }
+
+  .q-field__label {
+    color: #888;
+  }
+
+  .q-item__section {
+    color: #000;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,6 +65,10 @@
   .bg-content {
     background-color: #fff;
     color: black;
+  }
+
+  .q-separator {
+    background-color: #eee;
   }
 }
 
